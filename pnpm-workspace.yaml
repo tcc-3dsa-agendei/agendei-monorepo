@@ -1,0 +1,10 @@
+packages:
+  - apps/*
+  - packages/*
+allowBuilds:
+  better-sqlite3: true
+  esbuild: true
+catalog:
+  zod: "4.6.5"
+  better-auth: "1.7.5"
+  "@brazilian-utils/brazilian-utils": "2.4.0"

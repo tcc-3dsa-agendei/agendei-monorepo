@@ -1,0 +1,39 @@
+{
+  "name": "agendei-monorepo",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "type": "module",
+  "scripts": {
+    "check": "biome check --write",
+    "db:generate": "pnpm -r db:generate",
+    "db:migrate": "pnpm -r db:migrate",
+    "db:studio": "pnpm -r db:studio",
+    "dev": "pnpm -r --parallel dev",
+    "lint": "biome lint --write",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "*.{js,jsx,ts,tsx,json,css}": ["pnpm biome lint --write", "pnpm biome check --write"]
+  },
+  "devDependencies": {
+    "@agendei/config": "workspace:*",
+    "@biomejs/biome": "2.5.14",
+    "@types/node": "26.6.1",
+    "husky": "9.1.7",
+    "lint-staged": "17.5.1",
+    "typescript": "6.0.3"
+  },
+  "devEngines": {
+    "packageManager": {
+      "name": "pnpm",
+      "version": ">=12.4.2",
+      "onFail": "error"
+    },
+    "runtime": {
+      "name": "node",
+      "version": ">=24.21.0",
+      "onFail": "error"
+    }
+  }
+}
