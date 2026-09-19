@@ -1,0 +1,25 @@
+{
+  "name": "@agendei/drizzle",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts",
+    "./schema": "./schema/index.ts",
+    "./schema/*": "./schema/*.ts"
+  },
+  "scripts": {
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:studio": "drizzle-kit studio"
+  },
+  "dependencies": {
+    "@agendei/env": "workspace:*",
+    "better-sqlite3": "13.0.3",
+    "drizzle-orm": "0.45.2"
+  },
+  "devDependencies": {
+    "@agendei/config": "workspace:*",
+    "@types/better-sqlite3": "9.6.0",
+    "drizzle-kit": "0.31.10"
+  }
+}
