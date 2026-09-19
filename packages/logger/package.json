@@ -1,0 +1,14 @@
+{
+  "name": "@agendei/logger",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": "./index.ts"
+  },
+  "dependencies": {
+    "tslog": "5.2.0"
+  },
+  "devDependencies": {
+    "@agendei/config": "workspace:*"
+  }
+}
