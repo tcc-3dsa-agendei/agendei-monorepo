@@ -1,0 +1,20 @@
+{
+  "name": "@agendei/auth",
+  "private": true,
+  "type": "module",
+  "exports": {
+    "./server": "./server.ts",
+    "./client": "./client.ts"
+  },
+  "dependencies": {
+    "@agendei/drizzle": "workspace:*",
+    "@agendei/env": "workspace:*",
+    "@agendei/logger": "workspace:*",
+    "@brazilian-utils/brazilian-utils": "catalog:",
+    "better-auth": "catalog:",
+    "zod": "catalog:"
+  },
+  "devDependencies": {
+    "@agendei/config": "workspace:*"
+  }
+}
