@@ -16,7 +16,6 @@ export const auth = betterAuth({
   database: drizzleAdapter(db, {
     provider: "sqlite",
     debugLogs: serverEnv.NODE_ENV === "development",
-    transaction: true,
     usePlural: false,
     schema
   }),
@@ -58,7 +57,7 @@ export const auth = betterAuth({
             name: user.name,
             email: user.email,
             cnpj: context?.body.cnpj,
-            createdAt: new Date(user.createdAt).getUTCDate()
+            createdAt: new Date(user.createdAt).toISOString()
           })
         }
       }
@@ -84,7 +83,7 @@ export const auth = betterAuth({
   },
   emailAndPassword: {
     enabled: true,
-    minPasswordLength: 8,
+    minPasswordLength: 6,
     maxPasswordLength: 128,
     autoSignIn: true
   }
