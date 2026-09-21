@@ -1,5 +1,4 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { About } from "../pages/About"
 import { Booking } from "../pages/Booking"
 import { Clients } from "../pages/Clients"
 import { HeroSection } from "../pages/HeroSection"
@@ -22,7 +21,6 @@ export function SetupNavigation() {
         <Route path="/home" element={<Home />} />
         <Route path="/agenda" element={<Schedule />} />
         <Route path="/clientes" element={<Clients />} />
-        <Route path="/about" element={<About />} />
 
         <Route path="/profile" element={<Profile />} />
 
