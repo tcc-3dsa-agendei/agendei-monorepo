@@ -1,3 +1,5 @@
+// Tipagem dos dados que são retornados da API que consulta as informações do CNPJ
+
 export type OpenCnpj = {
   cnpj: string
   razao_social: string
