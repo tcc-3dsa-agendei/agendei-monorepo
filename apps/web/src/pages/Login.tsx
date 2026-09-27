@@ -27,8 +27,6 @@ export function Login() {
     }
   })
 
-  const _navigate = useNavigate()
-
   const handleSignIn = handleSubmit(async ({ email, password, remember_me }) => {
     await authClient.signIn.email({
       email,
