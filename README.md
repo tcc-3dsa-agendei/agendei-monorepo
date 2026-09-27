@@ -106,6 +106,18 @@ cp apps/web/.env.example apps/web/.env
 
 ### Executando
 
+Gere a secret do Better Auth e cole na variável de ambiente BETTER_AUTH_SECRET em apps/api/.env:
+
+```bash
+pnpx auth secret
+```
+
+Rode as migrations do banco de dados:
+
+```bash
+pnpm run db:migrate
+```
+
 Inicie o backend e o frontend em paralelo:
 
 ```bash
