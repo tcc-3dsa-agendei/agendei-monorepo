@@ -4,6 +4,8 @@ Sistema de agendamentos online e gerenciamento de clientes desenvolvido como Tra
 
 O objetivo do Agendei é facilitar a gestão de agendamentos, clientes e informações empresariais em um só lugar, oferecendo uma solução simples, intuitiva e eficiente para empresas que precisam otimizar seu tempo e melhorar o atendimento aos clientes.
 
+**IMPORTANTE:** Esse projeto ainda está em desenvolvimento e não representa a versão final do TCC
+
 ## Funcionalidades
 
 - **Dashboard**: visão geral do negócio com indicadores e acesso rápido às principais funcionalidades.
